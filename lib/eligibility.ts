@@ -7,6 +7,7 @@ export function isEligible(row: RawRow): boolean {
   const s = row.status.toLowerCase()
   if (s.includes("already")) return false
   if (s.includes("resent")) return false
+  if (s.includes("reset")) return false
 
   return true
 }
